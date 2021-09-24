@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/* 共通部分
+--------------------------- */
+html {
+  height: 100%;
+  font-size: 100%;
+}
+body {
+  height: 100%;
+  background-color: #131313;
+  font-family: 'Iowan Old Style','Mongolian Baiti',sans-serif;
+}
+a {
+  text-decoration: none;
+}
+* {
+  color: #f5f5f5;
+}
+.wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+p {
+  display: inline;
+  text-align: center;
+}
+
+/* HEADER */
+.header {
+  background-color: #090909;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  margin: auto 200px;
+}
+.main-nav {
+  display: flex;
+  margin: auto 0px;
+  padding: 0px;
+  font-size: 30px;
+  list-style: none;
+}
+.main-nav li {
+  margin-left: 50px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+/* HOME
+--------------------------- */
+#home {
+  height: 100%;
+}
+.home-contents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 892px;
+  width: 100%;
+}
+/* 見出し */
+#home .page-title {
+  padding-bottom: 55px;
+  font-size: 210px;
+}
+
+/* パーティクル */
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Projects
+--------------------------- */
+#main {
+  height: 5000px;
+  position: relative;
+  z-index: -1;
+}
+#main .page-title {
+  position: fixed;
+  top: 400px;
+  left: 10%;
+  font-size: 150px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #b5b5b5;
+  z-index: 1;
+}
+
+.section {
+  display: block;
+}
+.section-original-guitar {
+  /* padding: 39.655px 0 0 0; */
+}
+.section-content {
+  /* width: 980px; */
+  margin: 0 auto;
+}
+.product-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.section-original-guitar .product-image {
+  position: fixed;
+}
+#image-original-guitar {
+  /* position: relative; */
+  left: 50px;
+  float: right;
+  width: 100%;
+}
+
+
+
+
+
+.product-wrapper .product-copy {
+  margin-right: 50px;
+}
+.product-copy p {
+  font-size: 1.65em;
+}
+

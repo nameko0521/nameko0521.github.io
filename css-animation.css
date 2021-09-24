@@ -1,0 +1,65 @@
+/* 共通部分
+--------------------------- */
+/* HEADER */
+.menu-anime {
+  position: relative;
+  display: inline-block;
+}
+.menu-anime::before {
+  position: absolute;
+  bottom: -2px;
+  content: '';
+  width: 120%;
+  height: 1px;
+  background: #fff;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+.menu-anime:hover::before {
+  transform: scale(1, 1);
+}
+
+/* HOME
+--------------------------- */
+#home .page-title {
+  animation: fadeIn 1s ease-in 1 forwards, position-up 1s ease-in 1 forwards;
+}
+.background {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out 1 forwards;
+}
+
+/* Projects
+--------------------------- */
+.section-original-guitar {
+  animation: fadeIn 1s ease-in 1 forwards, position-up 1s ease-in 1 none;
+}
+.wrapper {
+  animation: fadeIn 1s ease-in 1 forwards, position-up 1s ease-in 1 none;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes position-up {
+  0% {
+    transform: translate3d(0, 20px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ani-delay01 {
+  animation-delay: .3s;
+}
+.ani-delay02 {
+  animation-delay: .5s;
+}
